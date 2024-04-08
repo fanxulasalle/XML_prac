@@ -1,7 +1,21 @@
+a)
 //item[(substring(pubDate, 6, 2) = '11' and substring(pubDate, 6, 2) = '12') or (substring(pubDate, 6, 2) = '01' and substring(pubDate, 6, 2) = '02')]
 
+b)
 //item[substring(pubDate, 1, 4) = substring(//item[category = 'Deportes'][1]/@pubDate, 1, 4)]/title 
 
+c)
 //item[category = (//item[last()]/category)]/title
 
+d)
 //item[contains(description, '<img')]/title | //item[contains(description, '<img')]/link
+
+<title>Rafa Nadal opina sin tapujos sobre el feminismo y la igualdad salarial en el deporte</title>
+<link>https://www.abc.es/deportes/tenis/rafa-nadal-habla-claro-sobre-piensa-feminismo-20240215094510-nt.html</link>
+<title>Un Mahomes brillante oposita a heredero de Tom Brady y mete a los Chiefs en otra Super Bowl</title>
+<link>https://www.abc.es/deportes/mahomes-brillante-oposita-heredero-brady-mete-chiefs-20230130120638-nt.html</link>
+<title>Laia Sanz: «Siento que cada año paso un examen pero no me afecta mucho»</title>
+<link>https://www.abc.es/deportes/laia-sanz-siento-ano-paso-examen-afecta-20240101180955-nt.html</link>
+<title>La inflación se estabiliza en el 3,5% en octubre justo a la puertas de cerrar el cálculo de la subida de pensiones de 2024</title>
+<link>https://www.abc.es/economia/inflacion-mantiene-octubre-moderacion-precio-alimentos-20231030090014-nt.html</link>
+
