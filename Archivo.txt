@@ -1,8 +1,54 @@
 a)
-//item[(substring(pubDate, 6, 2) = '11' and substring(pubDate, 6, 2) = '12') or (substring(pubDate, 6, 2) = '01' and substring(pubDate, 6, 2) = '02')]
+//item[(month-from-date(pubDate) >= 11 and month-from-date(pubDate) <= 12) or (month-from-date(pubDate) >= 1 and month-from-date(pubDate) <= 2)]
+//item[(substring(pubDate, 6, 2) >= '11' and substring(pubDate, 6, 2) <= '12') or (substring(pubDate, 6, 2) >= '01' and substring(pubDate, 6, 2) <= '02')] ## Si no funciona el otro
+
+<item>
+  <title>Rafa Nadal opina sin tapujos sobre el feminismo y la igualdad salarial en el deporte</title>
+  <link>https://www.abc.es/deportes/tenis/rafa-nadal-habla-claro-sobre-piensa-feminismo-20240215094510-nt.html</link>
+  <description><![CDATA[
+                        <img align="left" width="120" height="120" hspace="5" src="https://s3.abcstatics.com/abc/www/multimedia/deportes/2024/02/15/rafa-nadal-U6038317349R1C-U601309763919oD-1200x840@abc.PNG"/>
+                        <br>El tenista ha defendido en 'El Objetivo', programa presentado por Ana Pastor, que haya diferencias en el salario entre las mujeres y los hombres deportistas.
+                    ]]></description>
+  <category>Deportes</category>
+  <pubDate>2024-02-15</pubDate>
+  <author>JancarlosP@hotmail.com</author>
+</item>
+<item>
+  <title>Un Mahomes brillante oposita a heredero de Tom Brady y mete a los Chiefs en otra Super Bowl</title>
+  <link>https://www.abc.es/deportes/mahomes-brillante-oposita-heredero-brady-mete-chiefs-20230130120638-nt.html</link>
+  <description><![CDATA[
+                        <img align="left" width="120" height="120" hspace="5" src="https://s1.abcstatics.com/abc/www/multimedia/deportes/2023/01/30/mahomes-RgrFHeRncvhKTWoYpEMYCUI-1200x840@abc.jpg"/>
+                        <br>El próximo 12 de febrero la franquicia de Kansas City se medirá a los Philadelphia Eagles en una final inédita.
+                    ]]></description>
+  <category>Deportes</category>
+  <pubDate>2024-01-30</pubDate>
+  <author>maMari4@gmail.com</author>
+</item>
+<item>
+  <title>Laia Sanz: «Siento que cada año paso un examen pero no me afecta mucho»</title>
+  <link>https://www.abc.es/deportes/laia-sanz-siento-ano-paso-examen-afecta-20240101180955-nt.html</link>
+  <description><![CDATA[
+                        <img align="left" width="120" height="120" hspace="5" src="https://s1.abcstatics.com/abc/www/multimedia/deportes/2023/12/30/lsanz-RFDpLWyHxDLYA4EfYvrzAmL-1200x840@abc.jpg"/>
+                        <br>La catalana buscará la revancha en su tercer Dakar en coches tras una última edición repleta de vicisitudes.
+                    ]]></description>
+  <category>Deportes</category>
+  <pubDate>2023-12-31</pubDate>
+  <author>carl21@abc.com</author>
+</item>
+<item>
+  <title>El INE avanza un IPC del 3,2% en noviembre y perfila una subida de las pensiones del 3,8% en 2024</title>
+  <link>https://www.abc.es/economia/ine-avanza-ipc-noviembre-perfila-subida-pensiones-20231129090005-nt.html</link>
+  <description>La bajada del precio de los carburantes y de los paquetes turísticos y la menor subida de los alimentos respecto a hace un año provocan la primera caída mensual de los precios desde enero.</description>
+  <category>Economía</category>
+  <pubDate>2023-11-29</pubDate>
+  <author>MarcosT21@gmail.com</author>
+</item>
+
+
 
 b)
 //item[year-from-date(pubDate) = year-from-date(//item[category = 'Deportes'][1]/pubDate)]/title
+//item[substring(pubDate, 1, 4) = substring(//item[category = 'Deportes'][1]/pubDate, 1, 4)]/title  ## Si no funciona el otro
 
 <title>Rafa Nadal opina sin tapujos sobre el feminismo y la igualdad salarial en el deporte</title>
 <title>Un Mahomes brillante oposita a heredero de Tom Brady y mete a los Chiefs en otra Super Bowl</title>
