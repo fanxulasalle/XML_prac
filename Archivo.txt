@@ -7,6 +7,10 @@ b)
 c)
 //item[category = (//item[last()]/category)]/title
 
+<title>Pedro Sánchez, ridiculizado en la portada de la revista más influyente de Bruselas</title>
+<title>Medio siglo de políticos sin mojarse</title>
+<title>¿Quién fue Blas Piñar, el político de extrema derecha que hoy nadie conoce según Tamames?</title>
+
 d)
 //item[contains(description, '<img')]/title | //item[contains(description, '<img')]/link
 
