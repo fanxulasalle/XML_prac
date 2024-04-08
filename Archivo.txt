@@ -2,7 +2,10 @@ a)
 //item[(substring(pubDate, 6, 2) = '11' and substring(pubDate, 6, 2) = '12') or (substring(pubDate, 6, 2) = '01' and substring(pubDate, 6, 2) = '02')]
 
 b)
-//item[substring(pubDate, 1, 4) = substring(//item[category = 'Deportes'][1]/@pubDate, 1, 4)]/title 
+//item[year-from-date(pubDate) = year-from-date(//item[category = 'Deportes'][1]/pubDate)]/title
+
+<title>Rafa Nadal opina sin tapujos sobre el feminismo y la igualdad salarial en el deporte</title>
+<title>Un Mahomes brillante oposita a heredero de Tom Brady y mete a los Chiefs en otra Super Bowl</title>
 
 c)
 //item[category = (//item[last()]/category)]/title
