@@ -44,8 +44,6 @@ a)
   <author>MarcosT21@gmail.com</author>
 </item>
 
-
-
 b)
 //item[year-from-date(pubDate) = year-from-date(//item[category = 'Deportes'][1]/pubDate)]/title
 //item[substring(pubDate, 1, 4) = substring(//item[category = 'Deportes'][1]/pubDate, 1, 4)]/title  ## Si no funciona el otro
