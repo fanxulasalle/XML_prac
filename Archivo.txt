@@ -1,4 +1,4 @@
-//item[(substring(pubDate, 6, 2) >= '11' and substring(pubDate, 6, 2) <= '12') or (substring(pubDate, 6, 2) >= '01' and substring(pubDate, 6, 2) <= '02')]
+//item[(substring(pubDate, 6, 2) = '11' and substring(pubDate, 6, 2) = '12') or (substring(pubDate, 6, 2) = '01' and substring(pubDate, 6, 2) = '02')]
 
 //item[substring(pubDate, 1, 4) = substring(//item[category = 'Deportes'][1]/@pubDate, 1, 4)]/title 
 
